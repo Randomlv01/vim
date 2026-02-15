@@ -28,6 +28,7 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'catppuccin/vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
