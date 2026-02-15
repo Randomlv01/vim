@@ -20,12 +20,21 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'catppuccin/vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
+
+nnoremap F :Files<CR>     
+nnoremap B :Buffers<CR>   
+nnoremap L :Lines<CR>
 
 set termguicolors
 let g:tokyonight_transparent_background = 1
 colorscheme tokyonight
+"colorscheme catppuccin_mocha
+"let g:catppuccin_transparent_background = 1
 
 let g:lightline = {
       \ 'colorscheme': 'tokyonight',
