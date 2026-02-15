@@ -10,6 +10,8 @@ set statusline+=%r
 set statusline+=%=%y\ %P
 set mouse=a
 set autoindent
+filetype plugin indent on
+set smartindent
 
 highlight LineNr ctermfg=Blue
 
