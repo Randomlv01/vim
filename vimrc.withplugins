@@ -1,0 +1,33 @@
+set number
+syntax on
+"set relativenumber
+set cursorline
+set laststatus=2
+set ruler
+set statusline=%f
+set statusline+=%m
+set statusline+=%r
+set statusline+=%=%y\ %P
+set mouse=a
+set autoindent
+
+highlight LineNr ctermfg=Blue
+
+highlight CursorLine cterm=bold ctermbg=Black "ctermbg=235
+highlight CursorLineNr cterm=bold ctermbg=NONE ctermfg=Yellow
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'itchyny/lightline.vim'
+Plug 'ghifarit53/tokyonight-vim'
+
+call plug#end()
+
+set termguicolors
+let g:tokyonight_transparent_background = 1
+colorscheme tokyonight
+
+let g:lightline = {
+      \ 'colorscheme': 'tokyonight',
+      \ }
+
